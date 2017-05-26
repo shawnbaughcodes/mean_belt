@@ -1,0 +1,11 @@
+<div ng-controller='QuestionsController as QC'>
+    <h1>Add a Question</h1>
+    <form ng-submit='QC.create(QC.newQuestion)'>
+        Question:
+        <textarea ng-model='QC.newQuestion.question' rows="8" cols="80"></textarea>
+        <hr>
+        Description:
+        <textarea ng-model='QC.newQuestion.description' rows="8" cols="80"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+</div>

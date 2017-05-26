@@ -1,0 +1,15 @@
+<div ng-controller='AnswersController as AC'>
+    <h1>NEW ANSWER</h1>
+    <form ng-submit='AC.create(AC.newAnswer)'>
+        Your Answer:
+        <textarea ng-model='AC.newAnswer.answer' rows="8" cols="80"></textarea>
+        <hr>
+        Supporting Details (optional):
+        <textarea ng-model='AC.newAnswer.support' rows="8" cols="80"></textarea>
+        <br>
+        <a href="#!/dashboard"><button>Cancel</button></a>
+        <input type="submit" value="Submit">
+    </form>
+
+
+</div>

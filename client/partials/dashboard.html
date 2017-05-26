@@ -1,0 +1,12 @@
+
+    <h1>DASHBOARD</h1>
+    <a href="#!/logout"><button>Logout</button></a>
+    <a href="#!/new_question">Add a Question</a>
+<div ng-controller='QuestionsController as QC'>
+    <div ng-init='QC.index()'>
+        <div ng-repeat='q in QC.questions'>
+            <h4>{{q.question}} <button ng-click='QC.show(q._id)'>Show</button> <a href="#!/answer">Answer</a></h4>
+        </div>
+
+    </div>
+</div>
